@@ -8,168 +8,305 @@ Goal: Follow a progressive plan that maps to the official React docs at react.de
 
 - **[Quick Start](https://react.dev/learn)**
 
-  High-level introduction to React: components, JSX, props, state, and rendering. Don't need to learn aything, just stick with it and try to understad the English sentences.
+  > A high-level introduction to React: components, JSX, props, state, and rendering.
 
 - **[Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial)**
 
-  Step-by-step walkthrough building a small game while learning key concepts. It's fun if you have some idea of react, if not then temporarily skip after overview.
+  > Step-by-step tutorial building a small game while learning key React concepts.
 
 - **[Thinking in React](https://react.dev/learn/thinking-in-react)**
-
-  Essential module to read. It describes how to break UI into components, define data flow, and design React apps. It is also reading and get the idea.
+  > Learn how to break UI into components, design data flow, and structure React applications.
+      - Break UI into components.
+      - Determine data flow.
+      - Build a small React app step by step.
 
 ## Learn React
 
-### Describing the UI
+### Stage 1 - Describing the UI
 
-- **[Describing the UI](https://react.dev/learn/describing-the-ui)** (Overview)
+- **[Describing the UI](https://react.dev/learn/describing-the-ui)**
 
-  Core philosophy: components describe UI based on data.
+  > Core philosophy: components describe the UI based on data.
+
+      - Components describe what the UI should look like.
+      - React automatically updates the UI when data changes.
 
 - **[Your First Component](https://react.dev/learn/your-first-component)**
 
-  How to define and render your first functional component.
+  > How to define and render your first functional component.
+
+      - Functional components are simple JS functions.
+      - Return JSX from components.
+      - Components can accept props.
 
 - **[Importing and Exporting Components](https://react.dev/learn/importing-and-exporting-components)**
 
-  Organizing components across multiple files.
+  > Organizing components across multiple files for modularity.
+
+      - Use `export` and `import` to share components.
+      - Keep each component in a separate file for clarity.
 
 - **[Writing Markup with JSX](https://react.dev/learn/writing-markup-with-jsx)**
 
-  JSX syntax, rules, and why React uses JSX.
+  > Learn JSX syntax and rules, and understand why React uses JSX.
+
+      - JSX is syntactic sugar for `React.createElement`.
+      - JSX must have a single root element.
+      - Use `{}` to embed JS expressions.
 
 - **[JavaScript in JSX with Curly Braces](https://react.dev/learn/jsx-curly-braces)**
 
-  How to embed dynamic values and expressions inside JSX.
+  > How to embed dynamic values and expressions inside JSX.
+
+      - Use `{}` to insert variables.
+      - You can embed expressions, not statements.
+      - JSX evaluates expressions at render.
 
 - **[Passing Props to a Component](https://react.dev/learn/passing-props-to-a-component)**
 
-  How parent components send data to child components.
+  > How parent components pass data to child components using props.
+
+      - Props are read-only.
+      - Pass props as attributes in JSX.
+      - Child receives props as function parameters.
 
 - **[Conditional Rendering](https://react.dev/learn/conditional-rendering)**
 
-  Rendering different UI states based on logical conditions.
+  > Render different UI states based on logical conditions.
+
+      - Use ternary operators or `&&`.
+      - Return `null` to render nothing.
+      - Conditional rendering can be inline or in helper functions.
 
 - **[Rendering Lists](https://react.dev/learn/rendering-lists)**
 
-  How to loop over arrays and the correct usage of keys.
+  > Loop over arrays and render lists with proper `key` usage.
+
+      - Use `map()` to render lists.
+      - Each element needs a unique `key`.
+      - Keys help React track list items efficiently.
 
 - **[Keeping Components Pure](https://react.dev/learn/keeping-components-pure)**
 
-  Why components must remain pure for predictable rendering.
+  > Keep components pure for predictable rendering and state behavior.
+
+      - Pure components always render the same output for the same props.
+      - Avoid side effects in render.
+      - Side effects belong in effects/hooks.
 
 - **[Your UI as a Tree](https://react.dev/learn/your-ui-as-a-tree)**
-
-  Understanding component hierarchies and React’s virtual DOM tree.
+  > Understand component hierarchies and React’s virtual DOM tree.
+      - Break UI into nested components.
+      - Tree structure mirrors the actual DOM.
+      - Component hierarchy affects state/data flow.
 
 ---
 
-### Adding Interactivity
+### Stage 2 - Adding Interactivity
 
-- **[Adding Interactivity](https://react.dev/learn/adding-interactivity)** (Overview)
+- **[Adding Interactivity](https://react.dev/learn/adding-interactivity)**
 
-  Overview of how state and events create interactive behavior.
+  > Overview of how state and events create interactive behavior.
+
+      - Interactivity comes from state and events.
+      - State changes trigger re-renders.
+      - Event handlers define user interaction.
 
 - **[Responding to Events](https://react.dev/learn/responding-to-events)**
 
-  Attaching event handlers and React’s event system.
+  > Attach event handlers and understand React’s synthetic event system.
+
+      - Use camelCase event names.
+      - Pass functions as handlers.
+      - Synthetic events are cross-browser compatible.
 
 - **[State: A Component's Memory](https://react.dev/learn/state-a-components-memory)**
 
-  Understanding state and how it drives UI changes.
+  > Learn how state drives UI updates and preserves data between renders.
+
+      - Use `useState` for local state.
+      - State persists between renders.
+      - Calling setter triggers re-render.
 
 - **[Render and Commit](https://react.dev/learn/render-and-commit)**
 
-  How React processes updates: render → diff → commit.
+  > How React processes updates: render → diff → commit.
+
+      - Render produces a virtual DOM tree.
+      - Diffing finds minimal changes.
+      - Commit applies changes to the real DOM.
 
 - **[State as a Snapshot](https://react.dev/learn/state-as-a-snapshot)**
 
-  Why state updates are asynchronous and snapshot-based.
+  > State updates are asynchronous; understand snapshots and timing.
+
+      - Each render has a snapshot of state.
+      - Multiple state updates may be batched.
+      - Do not rely on current state immediately after setting it.
 
 - **[Queueing a Series of State Updates](https://react.dev/learn/queueing-series-of-state-updates)**
 
-  How React batches updates and queues state transitions.
+  > Learn how React batches and queues multiple state updates efficiently.
+
+      - Updates may be queued and merged.
+      - Functional updates help when using previous state.
+      - Batching improves performance.
 
 - **[Updating Objects in State](https://react.dev/learn/updating-objects-in-state)**
 
-  Immutable methods for updating object-based state.
+  > Use immutable patterns to update object-based state.
+
+      - Never mutate state directly.
+      - Use spread `{...state, newProp}`.
+      - Create new object references to trigger re-render.
 
 - **[Updating Arrays in State](https://react.dev/learn/updating-arrays-in-state)**
-
-  Immutable patterns for array updates in state.
+  > Use immutable patterns to update array-based state.
+      - Use `map`, `filter`, `concat` to produce new arrays.
+      - Do not push/pop directly on state.
+      - Maintain array immutability to avoid bugs.
 
 ---
 
-### Managing State
+### Stage 3 - Managing State
 
-- **[Managing State](https://react.dev/learn/managing-state)** (Overview)
+- **[Managing State](https://react.dev/learn/managing-state)**
 
-  High-level strategies for structuring and managing state.
+  > High-level strategies for structuring and managing component state.
+
+      - Keep state minimal.
+      - Lift state up when needed.
+      - Use context or reducers for shared state.
 
 - **[Reacting to Input with State](https://react.dev/learn/reacting-to-input-with-state)**
 
-  How form inputs interact with state to produce controlled components.
+  > Form inputs interacting with state to produce controlled components.
+
+      - Controlled inputs mirror state.
+      - Update state on change events.
+      - Use `value` and `onChange` together.
 
 - **[Choosing the State Structure](https://react.dev/learn/choosing-the-state-structure)**
 
-  How to shape state for clarity, minimalism, and scalability.
+  > How to shape state for clarity, minimalism, and scalability.
+
+      - Organize state logically.
+      - Avoid redundant state.
+      - Consider scalability for larger apps.
 
 - **[Sharing State Between Components](https://react.dev/learn/sharing-state-between-components)**
 
-  Lifting state up to coordinate multiple components.
+  > Lift state up to coordinate multiple components.
+
+      - Pass state as props.
+      - Lift shared state to closest common ancestor.
+      - Prevent duplicated or conflicting state.
 
 - **[Preserving and Resetting State](https://react.dev/learn/preserving-and-resetting-state)**
 
-  When React preserves or resets component state and why.
+  > Understand when React preserves or resets component state.
+
+      - Component re-mount resets state.
+      - Keys can force remount.
+      - Preserve state when necessary.
 
 - **[Extracting State Logic into a Reducer](https://react.dev/learn/extracting-state-logic-into-a-reducer)**
 
-  Using reducers for complex or multi-step state logic.
+  > Use reducers for complex or multi-step state logic.
+
+      - `useReducer` is good for complex updates.
+      - Reducers help separate logic from UI.
+      - Return new state objects in reducer.
 
 - **[Passing Data Deeply with Context](https://react.dev/learn/passing-data-deeply-with-context)**
 
-  Using React Context to avoid prop drilling.
+  > Use React Context to avoid prop drilling and share state globally.
+
+      - Create context with `createContext`.
+      - Use `Provider` to pass data.
+      - `useContext` consumes data in child components.
 
 - **[Scaling Up with Reducer and Context](https://react.dev/learn/scaling-up-with-reducer-and-context)**
-
-  Combining reducers and context for global or shared state management.
+  > Combine reducers and context for global or shared state management.
+      - Context provides global state.
+      - Reducers handle complex updates.
+      - Combine for scalable apps.
 
 ---
 
-### Escape Hatches
+### Stage 4 - Escape Hatches
 
-- **[Escape Hatches](https://react.dev/learn/escape-hatches)** (Overview)
+- **[Escape Hatches](https://react.dev/learn/escape-hatches)**
 
-  Tools for handling non-declarative or advanced cases.
+  > Techniques for handling non-declarative or advanced cases.
+
+      - Use refs for imperative tasks.
+      - Directly manipulate DOM if needed.
+      - Avoid overcomplicating declarative code.
 
 - **[Referencing Values with Refs](https://react.dev/learn/referencing-values-with-refs)**
 
-  Using refs to store mutable values without triggering renders.
+  > Store mutable values without triggering re-renders.
+
+      - `useRef` holds mutable value.
+      - Does not trigger re-renders.
+      - Useful for timers or DOM elements.
 
 - **[Manipulating the DOM with Refs](https://react.dev/learn/manipulating-the-dom-with-refs)**
 
-  Direct DOM access for imperative or low-level operations.
+  > Access the DOM directly for imperative operations.
+
+      - Access DOM nodes via ref.
+      - Perform manual focus or measurement.
+      - Avoid overusing; prefer declarative approach.
 
 - **[Synchronizing with Effects](https://react.dev/learn/synchronizing-with-effects)**
 
-  Understanding effects, dependencies, cleanup, and synchronization.
+  > Learn how effects work, their dependencies, cleanup, and synchronization.
+
+      - `useEffect` runs after render.
+      - Cleanup avoids memory leaks.
+      - Dependencies control when effect runs.
 
 - **[You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)**
 
-  Guidelines for reducing unnecessary effects and improving performance.
+  > Guidelines to avoid unnecessary effects and improve performance.
+
+      - If you can calculate something during render, you don’t need an Effect.
+      - To cache expensive calculations, add `useMemo` instead of `useEffect`.
+      - To reset the state of an entire component tree, pass a different `key` to it.
+      - To reset a particular bit of state in response to a prop change, set it during rendering.
+      - Code that runs because a component was displayed should be in Effects, the rest should be in events.
+      - If you need to update the state of several components, it’s better to do it during a single event.
+      - Whenever you try to synchronize state variables in different components, consider lifting state up.
+      - You can fetch data with Effects, but you need to implement cleanup to avoid race conditions.
 
 - **[Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effects)**
 
-  How effects run, clean up, and re-run across renders.
+  > How effects run, clean up, and re-run across renders.
+
+      - Effects run after render.
+      - Cleanup runs before next effect.
+      - Effects re-run on dependency change.
 
 - **[Separating Events from Effects](https://react.dev/learn/separating-events-from-effects)**
 
-  Why event-based logic should be separated from reactive effect logic.
+  > Why event-based logic should be separated from reactive effect logic.
+
+      - Use effects only for reactive behavior.
+      - Events handle user actions.
+      - Keep logic separated for clarity.
 
 - **[Removing Effect Dependencies](https://react.dev/learn/removing-effect-dependencies)**
 
-  Techniques for reducing dependency arrays and preventing infinite loops.
+  > Techniques for reducing dependency arrays and preventing infinite loops.
+
+      - Only include necessary dependencies.
+      - Avoid recreating functions inside effect.
+      - Memoize handlers when needed.
 
 - **[Reusing Logic with Custom Hooks](https://react.dev/learn/reusing-logic-with-custom-hooks)**
-
-  How to extract reusable logic into custom hooks.
+  > How to extract reusable logic into custom hooks.
+      - Create a function starting with `use`.
+      - Encapsulate logic and state.
+      - Reuse across multiple components.
