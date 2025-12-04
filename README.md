@@ -4,13 +4,16 @@ My Leaning Path of different technologies
 
 ## React
 
-1. [From React documentation](https://react.dev/learn/) [↗](./React.js/1.From-Original-React-Documentation.md)
-2. [Full-Stack Development with MERN](https://www.educative.io/courses/mern-stack) [↗](./MERN-FULL-STACK/)
+1. [From React documentation](./React.js/1.From-Original-React-Documentation.md) [↗](https://react.dev/learn/)
+2. [Full-Stack Development with MERN](./MERN-FULL-STACK/) [↗](https://www.educative.io/courses/mern-stack)
 
-   1. HTML, CSS, and JavaScript [↗](./MERN-FULL-STACK/1.HTML-CSS-and-JavaScript.md)
-   2. React [↗](./MERN-FULL-STACK/2.React.md)
-   3. Express with Node Essentials [↗](./MERN-FULL-STACK/3.Express-with-Node-Essentials.md)
-   4. MongoDB [↗](./MERN-FULL-STACK/4.MongoDB.md)
-   5. Project [↗](./MERN-FULL-STACK/)
+   1. [HTML, CSS, and JavaScript](./MERN-FULL-STACK/1.HTML-CSS-and-JavaScript.md)
+   2. [React](./MERN-FULL-STACK/2.React.md)
+   3. [Express with Node Essentials](./MERN-FULL-STACK/3.Express-with-Node-Essentials.md)
+   4. [MongoDB](./MERN-FULL-STACK/4.MongoDB.md)
+   5. [Project](./MERN-FULL-STACK/)
 
-3. []()
+3. [NextJS](./NextJS/)
+
+   1. [Next.js 15 Tutorial – Beginner to Advanced](./NextJS/) [↗](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY)
+   2. [Next.js Documentation](./NextJS/2.NextJS-Documentation.md) [↗](https://nextjs.org/learn)
