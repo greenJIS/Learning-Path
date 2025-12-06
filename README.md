@@ -17,3 +17,8 @@ My Leaning Path of different technologies
 
    1. [Next.js 15 Tutorial – Beginner to Advanced](./NextJS/) [↗](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY)
    2. [Next.js Documentation](./NextJS/2.NextJS-Documentation.md) [↗](https://nextjs.org/learn)
+
+4. [VueJS](./Vue.js/)
+
+   1. [Learn Vue with ChatGPT(basic)](./Vue.js/1.Vue-with-ChatGPT-Basic.md)
+   2. [Learn Vue with ChatGPT(Zero to Advanced)](./Vue.js/2.Vue-with-ChatGPT-Zero-Advanced.md)
