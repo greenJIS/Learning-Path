@@ -24,3 +24,5 @@ My Leaning Path of different technologies
    2. [Learn Vue with ChatGPT(Zero to Advanced)](./Vue.js/2.Vue-with-ChatGPT-Zero-Advanced.md)
 
 5. [Sassy CSS (SCSS)](./Sassy-CSS/)
+   1. [SCSS with CHatGPT](./Sassy-CSS/1.SCSS-with-ChatGPT.md)
+6. [BootstrapVue](./BootstrapVue/0.BootstrapVue-doc.md)
