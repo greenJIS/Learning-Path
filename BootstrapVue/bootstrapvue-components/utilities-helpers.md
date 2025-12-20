@@ -91,7 +91,7 @@ solid: true })
 
 ---
 
-## 4. Utility Classes in Vue
+## 4. Utility Classes in Vue [🔗](../_BootstrapVue-Utility-Classes.md)
 
 - Spacing: `m-1`, `mt-2`, `px-3`
 - Display: `d-flex`, `d-none`, `d-md-block`
